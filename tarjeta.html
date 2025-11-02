@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para el amor de mi vida 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #a2d9ff, #d0eaff);
+      font-family: 'Dancing Script', cursive;
+      overflow-x: hidden;
+      color: #003366;
+      position: relative;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: 25px;
+      box-shadow: 0 0 35px rgba(255, 182, 193, 0.5);
+      padding: 50px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #003366;
+      text-shadow: 2px 2px 6px rgba(255,255,255,0.8);
+      margin-bottom: 25px;
+      animation: glow 2.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff9ecf, 0 0 20px #ffb3d9; }
+      to { text-shadow: 0 0 20px #ff66b2, 0 0 30px #ff99cc; }
+    }
+
+    p {
+      font-size: 1.4em;
+      line-height: 1.8;
+      text-align: justify;
+      color: #000;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 25px;
+      font-size: 1.3em;
+      cursor: pointer;
+      margin: 15px;
+      transition: all 0.3s ease;
+      font-family: 'Dancing Script', cursive;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background-color: #005c99;
+      transform: scale(1.08);
+      box-shadow: 0 0 15px rgba(255,182,193,0.7);
+    }
+
+    .message-box {
+      display: none;
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 30px;
+      font-size: 1.4em;
+      line-height: 1.8;
+      box-shadow: 0 0 25px rgba(255,192,203,0.5);
+      animation: fadeIn 1s ease forwards;
+      text-align: justify;
+      color: #000;
+      position: relative;
+    }
+
+    #extraMessage {
+      display: none;
+      font-size: 1.8em;
+      margin-top: 30px;
+      color: #003366;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Corazones flotando */
+    .heart {
+      position: fixed;
+      bottom: 0;
+      color: #ff3366;
+      font-size: 24px;
+      animation: floatUp 6s ease-in infinite;
+      z-index: 1;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+    }
+
+    /* Decoraciones animadas */
+    .gif-decor {
+      position: absolute;
+      width: 140px;
+      opacity: 1;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255,192,203,0.6);
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-20px); }
+    }
+
+    .gif-left { left: -120px; top: 80px; }
+    .gif-right { right: -120px; top: 80px; }
+
+    audio { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💌 Para el amor de mi vida 💌</h1>
+
+    <!-- GIFS románticos actualizados -->
+    <img src="https://media.tenor.com/OcK_5YdlBeMAAAAC/bear-hug-love.gif" class="gif-decor gif-left" alt="pareja abrazada">
+    <img src="https://media.tenor.com/V0iJZl7Yp2IAAAAC/hug-love.gif" class="gif-decor gif-right" alt="pingüinitos abrazados">
+
+    <p>
+      Eres un novio muy lindo en todo el sentido de la palabra, un novio especial, divertido, 
+      con un sentido del humor hermoso, que donde quiera que vas conquistas 🥺❤️. 
+      Eres un ángel encantador que admiro profundamente por lo que eres, 
+      lo que te has convertido y lo que serás.  
+      Tienes unos valores muy bonitos, eres un ser humano increíble y me siento muy feliz de tenerte a mi lado.  
+      Eres como un regalito que me dio la vida, ¡y para quedarse! 🎁  
+      <br><br>
+      Los momentos que hemos vivido juntos, cada instante, cada segundo... eres una luz que no se compara con nadie 🌟.  
+      Me siento muy orgullosa de ti, de lo que eres y lo que serás. 
+      Estás hecho para grandes cosas y siempre te lo he dicho: eres un pequeño sol que la vida me regaló ☀️.  
+      <br><br>
+      Un buen hijo, hermano, novio, con todas las cualidades... te amo profundamente, eres lo más hermoso y lindo de la vida.  
+      Te amo con todo mi corazón y mi alma entera 😍🥰💖
+    </p>
+
+    <button id="btnMessage">💙 Da clic aquí 💙</button>
+    <button id="btnLove">💞 Te amo con mi vida 💞</button>
+
+    <div id="supportMessage" class="message-box">
+      <p>
+        Mi cielo hermoso, sé que estás pasando por un momento muy difícil ahorita, sé que no te sientes bien 
+        y que probablemente lo único que quieras o necesites sea un abrazo 🤍.  
+        Hoy, aunque no nos vemos, no sabes cómo quisiera estar allí contigo, darte un abrazote enorme 
+        y que te desahogues conmigo, que te quedes dormido en mis brazos... 🥺  
+        <br><br>
+        Mi amor, quiero que sepas que siempre voy a estar aquí para apoyarte, para consolarte en tus momentos difíciles.  
+        Sé que no todos los días son color de rosa, pero en esos momentos es cuando más debemos ser fuertes 
+        y sacar lo mejor de nosotros 💪💙.  
+        No me gusta verte así, me parte el corazón, porque no sabes cómo me gustaría verte como ayer: 
+        tan feliz, tan contento, con esa energía hermosa que me enamora cada día de ti 🌞.  
+        <br><br>
+        Eres lo mejor que me ha pasado, lo más lindo de mi vida, mi mayor regalo 🎁.  
+        Solo quiero que sepas que aunque estés pasando por un momento difícil, aquí tienes a tu chica, 
+        a tu amiga, a tu confidente, a tu persona que te ama más que a su vida entera 💖.  
+        <br><br>
+        No dejes que nada ni nadie apague tu aura, tu luz, tu amor propio, tu brillo que te hace único y especial ✨.  
+        Eres una persona auténtica, con un corazón increíble, y por eso te amo tanto.  
+        Nunca lo olvides, mi cielo... te amo con todo lo que soy 💙🥹💞
+      </p>
+    </div>
+
+    <p id="extraMessage">
+      Eres mi razón favorita para sonreír cada día 💫💖 ,
+      mi inspiración a ser cada día mejor, mi apoyo cuando
+      no me siento bien, mi sonrisa cuando ni siquiera yo sé
+      que me pasa , gracias solo tengo esa palabra así "GRACIAS"
+      por cada cosa que haces por mi y por cada día que me llenas
+      mi hermosa vida, espero hacer lo mismo ......
+      ¡Gracias por existir, mi amor! 💙💙💙
+    </p>
+  </div>
+
+  <audio id="music" autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    setTimeout(() => {
+      confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
+    }, 500);
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '💖';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (4 + Math.random() * 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(createHeart, 600);
+
+    document.getElementById("btnMessage").onclick = () => {
+      const box = document.getElementById("supportMessage");
+      if (box.style.display === "none" || box.style.display === "") {
+        box.style.display = "block";
+        confetti({ particleCount: 200, spread: 100, origin: { y: 0.7 } });
+      }
+    };
+
+    document.getElementById("btnLove").onclick = () => {
+      const msg = document.getElementById("extraMessage");
+      msg.style.display = "block";
+      confetti({ particleCount: 300, spread: 120, origin: { y: 0.6 } });
+    };
+  </script>
+</body>
+</html>
